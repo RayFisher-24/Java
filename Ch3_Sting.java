@@ -31,5 +31,16 @@ public class Ch3_Sting {
         
         /*Write a program to format the following letter using escape sequence characters.
         Letter = Dear Harry, This Java Course is nice. Thanks*/
+
+        
+        //Write a Java program to get the character at the given index within the String.
+        Scanner sc = new Scanner(System.in);
+        System.out.print("Enter the Name ");
+        String name = sc.next();
+
+        int index = name.charAt(0);
+
+        System.out.print((char)index);
+    
     } 
 }
