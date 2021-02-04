@@ -39,16 +39,25 @@ public class Ch3_Sting {
         String name = sc.next();
 
         int index = name.charAt(0);
-        System.out.print((char)index);*/
+        System.out.print((char)index);
 
         // Write a Java program to get the character (Unicode code point) at the given index within the String.
         Scanner in = new Scanner(System.in);
         System.out.print("Enter the Name ");
         String sc = in.next();
-        int name = sc.codePointBefore(1);
+        int name = sc.codePointAt(1);
 
         System.out.println(name);
 
+        //Write a Java program to get the character (Unicode code point) before the specified index within the String
+        Scanner in = new Scanner(System.in);
+        System.out.print("Enter the Name ");
+        String sc = in.next();
+        int name = sc.codePointBefore(1);
+
+        System.out.println(name);*/
+
+        //Write a Java program to count a number of Unicode code points in the specified text range of a String.
 
 
     
