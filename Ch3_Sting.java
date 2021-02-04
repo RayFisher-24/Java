@@ -3,7 +3,7 @@ public class Ch3_Sting {
     public static void main(String args[]) { 
         System.out.println("Sting");
         
-        //Write a Java program to convert a string to lowercase.
+       /* //Write a Java program to convert a string to lowercase.
         String To_loweer = new String("Programming is not Hard"); //Iuput
         System.out.println(To_loweer);
         System.out.println(To_loweer.toLowerCase()); //Output
@@ -29,8 +29,8 @@ public class Ch3_Sting {
         System.out.println(name.lastIndexOf("j"));
         
         
-        /*Write a program to format the following letter using escape sequence characters.
-        Letter = Dear Harry, This Java Course is nice. Thanks*/
+        //Write a program to format the following letter using escape sequence characters.
+        //Letter = Dear Harry, This Java Course is nice. Thanks
 
         
         //Write a Java program to get the character at the given index within the String.
@@ -39,9 +39,17 @@ public class Ch3_Sting {
         String name = sc.next();
 
         int index = name.charAt(0);
-        System.out.print((char)index);
+        System.out.print((char)index);*/
 
         // Write a Java program to get the character (Unicode code point) at the given index within the String.
+        Scanner in = new Scanner(System.in);
+        System.out.print("Enter the Name ");
+        String sc = in.next();
+        int name = sc.codePointBefore(1);
+
+        System.out.println(name);
+
+
 
     
     } 
