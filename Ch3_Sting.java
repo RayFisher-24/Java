@@ -3,7 +3,7 @@ public class Ch3_Sting {
     public static void main(String args[]) { 
         System.out.println("Sting");
         
-       /* //Write a Java program to convert a string to lowercase.
+       //Write a Java program to convert a string to lowercase.
         String To_loweer = new String("Programming is not Hard"); //Iuput
         System.out.println(To_loweer);
         System.out.println(To_loweer.toLowerCase()); //Output
@@ -55,9 +55,14 @@ public class Ch3_Sting {
         String sc = in.next();
         int name = sc.codePointBefore(1);
 
-        System.out.println(name);*/
+        System.out.println(name);
 
         //Write a Java program to count a number of Unicode code points in the specified text range of a String.
+
+        String name = "Arijit";
+        
+        int result = name.codePointCount(1, 10);
+        System.out.println(result);
 
 
     
