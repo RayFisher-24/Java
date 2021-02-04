@@ -39,8 +39,10 @@ public class Ch3_Sting {
         String name = sc.next();
 
         int index = name.charAt(0);
-
         System.out.print((char)index);
+
+        // Write a Java program to get the character (Unicode code point) at the given index within the String.
+
     
     } 
 }
