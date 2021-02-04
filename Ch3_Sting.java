@@ -3,7 +3,7 @@ public class Ch3_Sting {
     public static void main(String args[]) { 
         System.out.println("Sting");
         
-      //Write a Java program to convert a string to lowercase.
+        //Write a Java program to convert a string to lowercase.
         String To_loweer = new String("Programming is not Hard"); //Iuput
         System.out.println(To_loweer);
         System.out.println(To_loweer.toLowerCase()); //Output
@@ -62,7 +62,7 @@ public class Ch3_Sting {
         String name = "Arijit";
         
         int result = name.codePointCount(1, 10);
-        System.out.println(result);*/
+        System.out.println(result);
 
 
         //Write a Java program to compare two strings lexicographically. Two strings are lexicographically equal if they are the same length and contain the same characters in the same positions.
@@ -82,10 +82,25 @@ public class Ch3_Sting {
             System.out.println(str1+" is equal to "+str2);
         }else{
             System.out.println(str1+" is bigger than "+str2);
-        }
+        }*/
 
         // Write a Java program to compare two strings lexicographically, ignoring case differences.
+        String str1 = "mondal";
+        String str2 = "arijit";
 
+        int result = str1.compareToIgnoreCase(str2);
+        //System.out.println(result);
+
+        if(result<0)
+        {
+            System.out.println(str1+" is less than "+str2);
+        }
+        else if(result == 0)
+        {
+            System.out.println(str1+" is equal to "+str2);
+        }else{
+            System.out.println(str1+" is bigger than "+str2);
+        }
     
     } 
 }
