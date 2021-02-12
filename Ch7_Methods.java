@@ -1,7 +1,7 @@
 import java.util.Scanner;
 public class Ch7_Methods { 
     public static void main(String args[]) { //main method in this Ch7_Methods class
-        System.out.println("hello ");
+        System.out.println("Methods in Java");
 
       /*add(5,2);
         multipy(9,1);
