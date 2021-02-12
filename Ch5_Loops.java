@@ -1,7 +1,7 @@
 public class Ch5_Loops { 
     public static void main(String args[]) { 
         System.out.println("Loops");
-     /*  byte x = 3;
+      byte x = 3;
        while (x<99){
            System.out.println(x);
            x++;

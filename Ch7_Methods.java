@@ -3,7 +3,7 @@ public class Ch7_Methods {
     public static void main(String args[]) { //main method in this Ch7_Methods class
         System.out.println("Methods in Java");
 
-      /*add(5,2);
+        add(5,2);
         multipy(9,1);
         
         int a=5;
@@ -30,7 +30,7 @@ public class Ch7_Methods {
         double b = in.nextDouble();
         System.out.print("Input the third number: ");
         double c = in.nextDouble();
-        System.out.print("The smallest value is " + avg(a,b,c)+"\n" );*/
+        System.out.print("The smallest value is " + avg(a,b,c)+"\n" );
 
         Scanner in = new Scanner(System.in);
         System.out.print("Input a string: ");
@@ -38,7 +38,7 @@ public class Ch7_Methods {
         System.out.print("The middle character in the string: " + middle(str)+"\n");
 
     }
-    /*//Write a Java method to find the smallest number among three numbers.
+    //Write a Java method to find the smallest number among three numbers.
     public static double smallest(double x, double y, double z)
     {
         return Math.min(Math.min(x, y), z);
@@ -85,7 +85,7 @@ public class Ch7_Methods {
         return str.length(position, position+length);
     }
 
-   /* public static void add(int a, int b){ //void used as a return type
+    public static void add(int a, int b){ //void used as a return type
         System.out.println(a+b); //a , b is the parameter of the add method
     }
 
@@ -116,7 +116,7 @@ public class Ch7_Methods {
         for (String e2:arr2){
             System.out.println(e2 + " ");
         }
-    }*/
+    }
 
     
 

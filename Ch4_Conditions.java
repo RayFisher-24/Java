@@ -3,12 +3,12 @@ public class Ch4_Conditions {
     public static void main(String args[]) { 
         System.out.println("Conditions");
 
-      /* What will be the output of this program:
+      //What will be the output of this program:
         int a = 10;
         if (a=11)
             System.out.println(I am 11);
         else
-            System.out.println(I am not 11);*/
+            System.out.println(I am not 11);
 
         int a =10;
         if (a==11){ //In questions single = means assign the value in a variableand == means equals to
