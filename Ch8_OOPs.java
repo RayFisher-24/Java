@@ -1,22 +1,9 @@
-//Practice
-class Car{ //custom class
-    String name;
-    int price;
-    int doors;
-    String model;
-    public void printCar(){
-        System.out.println("The Car Name is "+name);
-        System.out.println("The Car Model is "+model);
-        System.out.println("The Car Price is "+price);
-        System.out.println("The Car Doors is "+doors);
-    }
-} 
 /*Create a class Employee with the following properties and methods:
- Salary (property) (int)
- getSalary (method returning int)
- name (property) (String)
- getName (method returning String)
- setName (method changing name)*/
+Salary (property) (int)
+getSalary (method returning int)
+name (property) (String)
+getName (method returning String)
+setName (method changing name)*/
 
 class Employee{//custom class           
     int salary;
@@ -33,6 +20,9 @@ class Employee{//custom class
     public String getName(){
         return name;
     }
+    public void setName(String n){
+        name = n;
+    }
 }
 
 //Create a class cellphone with methods to print ringing vibrating, etc.
@@ -45,7 +35,7 @@ class Cellphone{
     }
 }
 
- //Create a class Square with a method to initialize its side, calculating area, perimeter etc.
+//Create a class Square with a method to initialize its side, calculating area, perimeter etc.
 class Square{
     int side;
     public int area(){
@@ -54,15 +44,17 @@ class Square{
     public int perimeter(){
         return 4*side;
     }
+}
 
 //Create a class Rectangle with a method to initialize its side, calculating area, perimeter etc.
 class Rectangle{
-    int side;
+    int l;
+    int w;
     public int area(){
-        return side*side;
+        return l*w;
     }
     public int perimeter(){
-        return 2*(side+side);
+        return 2*(l+w);
     }
 }
 
@@ -75,43 +67,15 @@ class TommyVecetti{
     }
 }
 
-
 public class Ch8_OOPs { 
-    public static void main(String args[]) { //main method in this Ch8_OOPs class
-      System.out.println("OOPs in Java ");
+    public static void main(String args[]) { 
 
-        
-      Car tesla = new Car();
-        tesla.name = "Tesla";
-        tesla.doors = 4;
-        tesla.model = "Model3";
-        tesla.price = 36980;
-        tesla.printCar();
-
-      //Problem-1
-      Employee arijit = new Employee(); //Instantiating a new employee object 
-      //setting properties or attributes for arijit
-        arijit.id = 1;
-        arijit.name = "arijit";
-        arijit.printEmp();
-        arijit.salary = 36;
-
-        int salary = arijit.getSalary();
-        System.out.println("Salary is "+salary);
-
-        Employee jhon = new Employee();
-        //setting attributes for jhon
-        jhon.id = 2;
-        jhon.name = "jhon";
-        jhon.printEmp();
-        jhon.salary = 12;
-        int salary2 = jhon.getSalary();
-        System.out.println("Salary is "+salary2);
-        Employee arijit = new Employee();
-        arijit.name = "Arijit";
-
-        String name = arijit.getName();
-        System.out.println("MY name is "+name);
+        //Problem-1
+        Employee emp1 = new Employee();
+        emp1.setName("ARijitMOndal");
+        emp1.salary = 233;
+        System.out.println(emp1.getName());
+        System.out.println(emp1.getSalary());
 
         //Problem-2
         Cellphone realmi = new Cellphone();
@@ -120,30 +84,19 @@ public class Ch8_OOPs {
 
         //Problem-3
         Square sq = new Square();
-        sq.side = 2;
+        sq.side = 3;
         System.out.println(sq.area());
         System.out.println(sq.perimeter());
-        
+
         //Problem-4
         Rectangle re = new Rectangle();
-        re.side = 2;
+        re.l = 5;
+        re.w = 6;
         System.out.println(re.area());
         System.out.println(re.perimeter()); 
 
         //Problem-5
         TommyVecetti game = new TommyVecetti();
-        game.RockstarGame();   
-
-
-
-
-
-
-            
-
-            
-
-
-
+        game.RockstarGame();  
     }
 }
