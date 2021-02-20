@@ -31,11 +31,34 @@ class Derived extends Base{
     }
 }
 
+class Base1{
+    public int number;
+
+    public void meth1(){
+        System.out.println("I am Meth1");
+    }
+    public void meth2(){
+        System.out.println("I am Meth2 of Base1");
+    }
+}
+
+class Base2 extends Base1{
+
+    @override
+    public void meth2(){
+        System.out.println("I am Meth2 of Base2");
+    }
+    public void meth3(){
+        System.out.println("I am Meth3");
+    }
+
+}
+
 public class Ch10_Inheritance { 
     public static void main(String args[]) {
         System.out.println("Inheritance");
        // Base b = new Base();
-        Derived d = new Derived(99,108);
+       // Derived d = new Derived(99,108);
        // b.Base();
        // b.setNum(69);
        // System.out.println(b.getNum());
@@ -44,5 +67,12 @@ public class Ch10_Inheritance {
        // d.setNum(78);
        // System.out.println(d.getNum());
         d.Derived();*/
+
+
+        Base1 b = new Base1();
+        //b.meth2();
+
+        Base2 bb = new Base2();
+        bb.meth2();
     }
 }
