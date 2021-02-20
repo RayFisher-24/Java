@@ -1,5 +1,5 @@
 import java.util.Scanner;
-//import java.util.Random;
+import java.util.*;
 
 
 class Random{
@@ -11,13 +11,6 @@ class Random{
     public int takeUserInput(){
         return num;
     }
-   /* public double [] list(){
-        anArray = new double[10];
-        for(int i=0; i<anArrary.length;i++){
-            anArrary[i] = randomFill();
-        }
-        return anArrary;
-    }*/
 }
 
 public class randomNum { 
@@ -26,14 +19,16 @@ public class randomNum {
         System.out.print("Enter your Random Number ");
         int result = sc.nextInt();
 
-        //generate the random number
-        randomNum rand = new randomNum();
-        int rand_int1 = rand.nextInt();
-
         Random rm = new Random(result);
-        int rmNum = 69;
-        System.out.println("The real number is "+rmNum);
-        System.out.println(rmNum==rm.takeUserInput());
+        //generate the random number
+        int min = 50;
+        int max = 100;
+
+        //Generate random int value from 50 to 100 
+        System.out.println("Random value in int from "+min+" to "+max+ ":");
+        int random_int = (int)(Math.random() * (max - min + 1) + min);
+        System.out.println(random_int==rm.takeUserInput());
+        System.out.println("the real number is "+random_int);
 
     }
 }
