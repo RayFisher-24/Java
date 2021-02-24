@@ -148,7 +148,23 @@ class smartTelephone extends telephone{
 
 }
 
+//Problem-4 Create an interface TVremote and use it to inherit another interface smart TVremote. Create a class TV which implements TVremote interface
+interface TVremote{
+    void remote();
+}
 
+interface smartTVremote{
+    void smartRemote();
+}
+
+class TV implements TVremote, smartTVremote{
+    public void remote(){
+        System.out.println("Remote...");
+    }
+    public void smartRemote(){
+        System.out.println("Smart Remote...");
+    }
+}
 
 public class Ch11_AbstractClassandMethod { 
     public static void main(String args[]) {
@@ -189,6 +205,11 @@ public class Ch11_AbstractClassandMethod {
         //Problem-3
         telephone st = new smartTelephone();
         st.disconnected();
+
+        //Problem-4
+        TVremote t = new TV();
+        t.remote(); //right
+        //t.smartRemote(); error
        
    
     }
