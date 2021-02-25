@@ -4,6 +4,7 @@ interface TVremote{
 
 interface smartTVremote{
     void smartRemote();
+    int fuck();
 }
 
 class TV implements TVremote, smartTVremote{
@@ -13,9 +14,10 @@ class TV implements TVremote, smartTVremote{
     public void smartRemote(){
         System.out.println("Smart Remote...");
     }
+    public int fuck(int f){
+        return f;
+    }
 }
-
-
 
 public class practice { 
     public static void main(String args[]) {
