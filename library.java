@@ -3,6 +3,8 @@
 // Properties: Array to store the available books,
 // Array to store the issued books
 
+package arijit;
+
 class libraryBook{
     public void addBook(){
 

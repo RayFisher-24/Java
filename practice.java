@@ -1,10 +1,11 @@
+package arijit;
 interface TVremote{
     void remote();
 }
 
 interface smartTVremote{
     void smartRemote();
-    int fuck();
+    int fuck(int f);
 }
 
 class TV implements TVremote, smartTVremote{
