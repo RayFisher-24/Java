@@ -1,1 +1,1 @@
-Monkey
+cc.a();
