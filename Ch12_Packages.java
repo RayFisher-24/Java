@@ -19,7 +19,7 @@ class d extends c{
 }
 
 //Create three classes calculator , Sc calculator and Hybridcalculator and group them into a package 
-package classes;
+//package classes;
 class calculator{
     public void calculator(){
         System.out.println("Cacilator");
