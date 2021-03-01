@@ -1,4 +1,4 @@
-//package com.codewithme.shape;
+package com.codewithme.shape;
 class Rectangle{
     public double length;
     public double width;
@@ -17,6 +17,19 @@ class Square{
         return s*s;
     }
 }
+class Circle{
+    public double area;
+
+    public double area(double r){
+        double result = Math.PI*r*r;
+        System.out.println(result);
+        return result;
+    }
+}
+class Cylinder extends Circle{
+    
+
+}
 
 public class test1 { 
     public static void main(String args[]) {
@@ -33,6 +46,8 @@ public class test1 {
         Square s = new Square();
         s.Side(9);
 
+        Circle c = new Circle();
+        c.area(9);
         
 
     }
