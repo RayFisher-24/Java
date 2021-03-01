@@ -1,248 +1,40 @@
 class MyThreadRunnable1 implements Runnable{
+    public float num = 2.0f;
+    MyThreadRunnable1(String name){
+        System.out.println(name+" is my name.");
+
+    }
+    MyThreadRunnable1(Runnable r){
+        System.out.println(r);
+    }
+
+
+    @Override
     public void run(){
-        System.out.println("I am a thread 1 not a threat 1");
-        System.out.println("I am a thread 1 not a threat 1");
-        System.out.println("I am a thread 1 not a threat 1");
-        System.out.println("I am a thread 1 not a threat 1");
-        System.out.println("I am a thread 1 not a threat 1");
-        System.out.println("I am a thread 1 not a threat 1");
-        System.out.println("I am a thread 1 not a threat 1");
-        System.out.println("I am a thread 1 not a threat 1");
-        System.out.println("I am a thread 1 not a threat 1");
-        System.out.println("I am a thread 1 not a threat 1");
-        System.out.println("I am a thread 1 not a threat 1");
-        System.out.println("I am a thread 1 not a threat 1");
-        System.out.println("I am a thread 1 not a threat 1");
-        System.out.println("I am a thread 1 not a threat 1");
-        System.out.println("I am a thread 1 not a threat 1");
-        System.out.println("I am a thread 1 not a threat 1");
-        System.out.println("I am a thread 1 not a threat 1");
-        System.out.println("I am a thread 1 not a threat 1");
-        System.out.println("I am a thread 1 not a threat 1");
-        System.out.println("I am a thread 1 not a threat 1");
-        System.out.println("I am a thread 1 not a threat 1");
-        System.out.println("I am a thread 1 not a threat 1");
-        System.out.println("I am a thread 1 not a threat 1");
-        System.out.println("I am a thread 1 not a threat 1");
-        System.out.println("I am a thread 1 not a threat 1");
-        System.out.println("I am a thread 1 not a threat 1");
-        System.out.println("I am a thread 1 not a threat 1");
-        System.out.println("I am a thread 1 not a threat 1");
-        System.out.println("I am a thread 1 not a threat 1");
-        System.out.println("I am a thread 1 not a threat 1");
-        System.out.println("I am a thread 1 not a threat 1");
-        System.out.println("I am a thread 1 not a threat 1");
-        System.out.println("I am a thread 1 not a threat 1");
-        System.out.println("I am a thread 1 not a threat 1");
-        System.out.println("I am a thread 1 not a threat 1");
-        System.out.println("I am a thread 1 not a threat 1");
-        System.out.println("I am a thread 1 not a threat 1");
-        System.out.println("I am a thread 1 not a threat 1");
-        System.out.println("I am a thread 1 not a threat 1");
-        System.out.println("I am a thread 1 not a threat 1");
-        System.out.println("I am a thread 1 not a threat 1");
-        System.out.println("I am a thread 1 not a threat 1");
-        System.out.println("I am a thread 1 not a threat 1");
-        System.out.println("I am a thread 1 not a threat 1");
-        System.out.println("I am a thread 1 not a threat 1");
-        System.out.println("I am a thread 1 not a threat 1");
-        System.out.println("I am a thread 1 not a threat 1");
-        System.out.println("I am a thread 1 not a threat 1");
-        System.out.println("I am a thread 1 not a threat 1");
-        System.out.println("I am a thread 1 not a threat 1");
-        System.out.println("I am a thread 1 not a threat 1");
-        System.out.println("I am a thread 1 not a threat 1");
-        System.out.println("I am a thread 1 not a threat 1");
-        System.out.println("I am a thread 1 not a threat 1");
-        System.out.println("I am a thread 1 not a threat 1");
-        System.out.println("I am a thread 1 not a threat 1");
-        System.out.println("I am a thread 1 not a threat 1");
-        System.out.println("I am a thread 1 not a threat 1");
-        System.out.println("I am a thread 1 not a threat 1");
-        System.out.println("I am a thread 1 not a threat 1");
-        System.out.println("I am a thread 1 not a threat 1");
-        System.out.println("I am a thread 1 not a threat 1");
-        System.out.println("I am a thread 1 not a threat 1");
-        System.out.println("I am a thread 1 not a threat 1");
-        System.out.println("I am a thread 1 not a threat 1");
-        System.out.println("I am a thread 1 not a threat 1");
-        System.out.println("I am a thread 1 not a threat 1");
-        System.out.println("I am a thread 1 not a threat 1");
-        System.out.println("I am a thread 1 not a threat 1");
-        System.out.println("I am a thread 1 not a threat 1");
-        System.out.println("I am a thread 1 not a threat 1");
-        System.out.println("I am a thread 1 not a threat 1");
-        System.out.println("I am a thread 1 not a threat 1");
-        System.out.println("I am a thread 1 not a threat 1");
-        System.out.println("I am a thread 1 not a threat 1");
-        System.out.println("I am a thread 1 not a threat 1");
-        System.out.println("I am a thread 1 not a threat 1");
-        System.out.println("I am a thread 1 not a threat 1");
-        System.out.println("I am a thread 1 not a threat 1");
-        System.out.println("I am a thread 1 not a threat 1");
-        System.out.println("I am a thread 1 not a threat 1");
-        System.out.println("I am a thread 1 not a threat 1");
-        System.out.println("I am a thread 1 not a threat 1");
-        System.out.println("I am a thread 1 not a threat 1");
-        System.out.println("I am a thread 1 not a threat 1");
-        System.out.println("I am a thread 1 not a threat 1");
-        System.out.println("I am a thread 1 not a threat 1");
-        System.out.println("I am a thread 1 not a threat 1");
-        System.out.println("I am a thread 1 not a threat 1");
-        System.out.println("I am a thread 1 not a threat 1");
+        System.out.println(num+" it 's Thread run Method");
     }
 }
-class MyThreadRunnable2 implements Runnable{
-    public void run(){
-        System.out.println("I am a thread 2 not a threat 2");
-        System.out.println("I am a thread 2 not a threat 2");
-        System.out.println("I am a thread 2 not a threat 2");
-        System.out.println("I am a thread 2 not a threat 2");
-        System.out.println("I am a thread 2 not a threat 2");
-        System.out.println("I am a thread 2 not a threat 2");
-        System.out.println("I am a thread 2 not a threat 2");
-        System.out.println("I am a thread 2 not a threat 2");
-        System.out.println("I am a thread 2 not a threat 2");
-        System.out.println("I am a thread 2 not a threat 2");
-        System.out.println("I am a thread 2 not a threat 2");
-        System.out.println("I am a thread 2 not a threat 2");
-        System.out.println("I am a thread 2 not a threat 2");
-        System.out.println("I am a thread 2 not a threat 2");
-        System.out.println("I am a thread 2 not a threat 2");
-        System.out.println("I am a thread 2 not a threat 2");
-        System.out.println("I am a thread 2 not a threat 2");
-        System.out.println("I am a thread 2 not a threat 2");
-        System.out.println("I am a thread 2 not a threat 2");
-        System.out.println("I am a thread 2 not a threat 2");
-        System.out.println("I am a thread 2 not a threat 2");
-        System.out.println("I am a thread 2 not a threat 2");
-        System.out.println("I am a thread 2 not a threat 2");
-        System.out.println("I am a thread 2 not a threat 2");
-        System.out.println("I am a thread 2 not a threat 2");
-        System.out.println("I am a thread 2 not a threat 2");
-        System.out.println("I am a thread 2 not a threat 2");
-        System.out.println("I am a thread 2 not a threat 2");
-        System.out.println("I am a thread 2 not a threat 2");
-        System.out.println("I am a thread 2 not a threat 2");
-        System.out.println("I am a thread 2 not a threat 2");
-        System.out.println("I am a thread 2 not a threat 2");
-        System.out.println("I am a thread 2 not a threat 2");
-        System.out.println("I am a thread 2 not a threat 2");
-        System.out.println("I am a thread 2 not a threat 2");
-        System.out.println("I am a thread 2 not a threat 2");
-        System.out.println("I am a thread 2 not a threat 2");
-        System.out.println("I am a thread 2 not a threat 2");
-        System.out.println("I am a thread 2 not a threat 2");
-        System.out.println("I am a thread 2 not a threat 2");
-        System.out.println("I am a thread 2 not a threat 2");
-        System.out.println("I am a thread 2 not a threat 2");
-        System.out.println("I am a thread 2 not a threat 2");
-        System.out.println("I am a thread 2 not a threat 2");
-        System.out.println("I am a thread 2 not a threat 2");
-        System.out.println("I am a thread 2 not a threat 2");
-        System.out.println("I am a thread 2 not a threat 2");
-        System.out.println("I am a thread 2 not a threat 2");
-        System.out.println("I am a thread 2 not a threat 2");
-        System.out.println("I am a thread 2 not a threat 2");
-        System.out.println("I am a thread 2 not a threat 2");
-        System.out.println("I am a thread 2 not a threat 2");
-        System.out.println("I am a thread 2 not a threat 2");
-        System.out.println("I am a thread 2 not a threat 2");
-        System.out.println("I am a thread 2 not a threat 2");
-        System.out.println("I am a thread 2 not a threat 2");
-        System.out.println("I am a thread 2 not a threat 2");
-        System.out.println("I am a thread 2 not a threat 2");
-        System.out.println("I am a thread 2 not a threat 2");
-        System.out.println("I am a thread 2 not a threat 2");
-        System.out.println("I am a thread 2 not a threat 2");
-        System.out.println("I am a thread 2 not a threat 2");
-        System.out.println("I am a thread 2 not a threat 2");
-        System.out.println("I am a thread 2 not a threat 2");
-        System.out.println("I am a thread 2 not a threat 2");
-        System.out.println("I am a thread 2 not a threat 2");
-        System.out.println("I am a thread 2 not a threat 2");
-        System.out.println("I am a thread 2 not a threat 2");
-        System.out.println("I am a thread 2 not a threat 2");
-        System.out.println("I am a thread 2 not a threat 2");
-        System.out.println("I am a thread 2 not a threat 2");
-        System.out.println("I am a thread 2 not a threat 2");
-        System.out.println("I am a thread 2 not a threat 2");
-        System.out.println("I am a thread 2 not a threat 2");
-        System.out.println("I am a thread 2 not a threat 2");
-        System.out.println("I am a thread 2 not a threat 2");
-        System.out.println("I am a thread 2 not a threat 2");
-        System.out.println("I am a thread 2 not a threat 2");
-        System.out.println("I am a thread 2 not a threat 2");
-        System.out.println("I am a thread 2 not a threat 2");
-        System.out.println("I am a thread 2 not a threat 2");
-        System.out.println("I am a thread 2 not a threat 2");
-        System.out.println("I am a thread 2 not a threat 2");
-        System.out.println("I am a thread 2 not a threat 2");
-        System.out.println("I am a thread 2 not a threat 2");
-        System.out.println("I am a thread 2 not a threat 2");
-        System.out.println("I am a thread 2 not a threat 2");
-        System.out.println("I am a thread 2 not a threat 2");
-        System.out.println("I am a thread 2 not a threat 2");
-        System.out.println("I am a thread 2 not a threat 2");
-        System.out.println("I am a thread 2 not a threat 2");
-        System.out.println("I am a thread 2 not a threat 2");
-        System.out.println("I am a thread 2 not a threat 2");
-        System.out.println("I am a thread 2 not a threat 2");
-        System.out.println("I am a thread 2 not a threat 2");
-        System.out.println("I am a thread 2 not a threat 2");
-        System.out.println("I am a thread 2 not a threat 2");
-        System.out.println("I am a thread 2 not a threat 2");
-        System.out.println("I am a thread 2 not a threat 2");
-        System.out.println("I am a thread 2 not a threat 2");
-        System.out.println("I am a thread 2 not a threat 2");
-        System.out.println("I am a thread 2 not a threat 2");
-        System.out.println("I am a thread 2 not a threat 2");
-        System.out.println("I am a thread 2 not a threat 2");
-        System.out.println("I am a thread 2 not a threat 2");
-        System.out.println("I am a thread 2 not a threat 2");
-        System.out.println("I am a thread 2 not a threat 2");
-        System.out.println("I am a thread 2 not a threat 2");
-        System.out.println("I am a thread 2 not a threat 2");
-        System.out.println("I am a thread 2 not a threat 2");
-        System.out.println("I am a thread 2 not a threat 2");
-        System.out.println("I am a thread 2 not a threat 2");
-        System.out.println("I am a thread 2 not a threat 2");
-        System.out.println("I am a thread 2 not a threat 2");
-        System.out.println("I am a thread 2 not a threat 2");
-        System.out.println("I am a thread 2 not a threat 2");
-        System.out.println("I am a thread 2 not a threat 2");
-        System.out.println("I am a thread 2 not a threat 2");
-        System.out.println("I am a thread 2 not a threat 2");
-        System.out.println("I am a thread 2 not a threat 2");
-        System.out.println("I am a thread 2 not a threat 2");
-        System.out.println("I am a thread 2 not a threat 2");
-        System.out.println("I am a thread 2 not a threat 2");
-        System.out.println("I am a thread 2 not a threat 2");
-        System.out.println("I am a thread 2 not a threat 2");
-        System.out.println("I am a thread 2 not a threat 2");
-        System.out.println("I am a thread 2 not a threat 2");
-        System.out.println("I am a thread 2 not a threat 2");
-        System.out.println("I am a thread 2 not a threat 2");
-        System.out.println("I am a thread 2 not a threat 2");
-        System.out.println("I am a thread 2 not a threat 2");
-        System.out.println("I am a thread 2 not a threat 2");
-        System.out.println("I am a thread 2 not a threat 2");
-        System.out.println("I am a thread 2 not a threat 2");
-        System.out.println("I am a thread 2 not a threat 2");
-        System.out.println("I am a thread 2 not a threat 2");
-        System.out.println("I am a thread 2 not a threat 2");
-        System.out.println("I am a thread 2 not a threat 2");
+
+class MyThread extends Thread{
+    MyThread(int num){
+        System.out.println(num+ " is the number of o/p");
     }
+
+    @Override
+    public void run(){
+        
+    }
+
 }
+
 public class test {
     public static void main(String[] args) {
-        MyThreadRunnable1 bullet1 = new MyThreadRunnable1();
+        MyThreadRunnable1 bullet1 = new MyThreadRunnable1("arijit");
         Thread gun1 = new Thread(bullet1);
-
-        MyThreadRunnable2 bullet2 = new MyThreadRunnable2();
-        Thread gun2 = new Thread(bullet2);
-
         gun1.start();
-        gun2.start();
+
+        MyThread m = new MyThread(6969);
+        m.start();
+       
     }
 }
