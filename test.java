@@ -1,51 +1,24 @@
-class MyThreadRunnable1 implements Runnable{
-    public float num = 2.0f;
-    
-    MyThreadRunnable1(String name){
-        System.out.println(name+" is the Overlodding Constructor.");
-    }
-
-
-    @Override
+class Good extends Thread{
     public void run(){
-        System.out.println(num+" it 's Thread run Method");
+        while(true){
+            System.out.println("Good Morning");
+        }
     }
 }
-
-
-
-
-
-
-
-class MyThread extends Thread{
-
-    MyThread(){
-        System.out.println("This is Thread Constructor Method.");
-    }
-    MyThread(String num){
-        super(num);
-        System.out.println("This is Thread Constructor Overloaded Method.");
-    }
-    MyThread(Runnable r){
-        System.out.println("ABCD");
-    }
-    
-
-    @Override
+class Welcome extends Thread{
     public void run(){
-        
+        while(true){
+            System.out.println("Welcome");
+        }
     }
 }
 
 public class test {
     public static void main(String[] args) {
-       /* MyThreadRunnable1 bullet1 = new MyThreadRunnable1("arijit");
-        Thread gun1 = new Thread(bullet1);
-        gun1.start();*/
+       Good g = new Good();
+       g.start();
+       Welcome w = new Welcome();
+       w.start();
 
-        MyThread m = new MyThread(6);
-        m.start();
-       
     }
 }
