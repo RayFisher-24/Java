@@ -85,7 +85,7 @@ public class jv1 {
         System.out.println(quotientOfIJ);
     }
 
-    /*Write a program, TrigValues.java, that reads in a double (an angle measure in degrees, not radians!) and prints out the sine, cosine, tangent, secant, cosecant, and cotangent for that angle.
+    /*5. Write a program, TrigValues.java, that reads in a double (an angle measure in degrees, not radians!) and prints out the sine, cosine, tangent, secant, cosecant, and cotangent for that angle.
     Hint #1:  For this, you will need Math.sin(x), Math.cos(x), and Math.tan(x).
     Hint #2:  These Math functions accept angles in radians, not degrees.  You'll have to do something about that!
     Hint #3:  You do not have to gracefully handle division-by-zero, (such as the cot(0)), though it may be interesting to see what your program does in this case.*/
@@ -107,7 +107,7 @@ public class jv1 {
         System.out.println("cos("+degrees+")="+cosValue);
     }
     
-    /*Write a program, QuadraticRoots.java, that reads in three doubles a, b, and c -- the coefficients of a quadratic equation y = ax2 + bx + c -- and prints out the two zeroes as found by the Quadratic Formula.
+    /*6. Write a program, QuadraticRoots.java, that reads in three doubles a, b, and c -- the coefficients of a quadratic equation y = ax2 + bx + c -- and prints out the two zeroes as found by the Quadratic Formula.
     Hint #1:  For this, you will need Math.sqrt(x), which computes the square root of its argument.
     Hint #2:  You may assume that the equation has two roots (though it may be interesting to see what your program does when the input only has one or zero roots).*/
     public static double ABC(int a, int b, int c){
@@ -116,6 +116,32 @@ public class jv1 {
         return a*Math.sqrt(x) + b*x + c;
     }
 
+    //7. Java Program to Find the Roots of Quadratic Equation
+    public static double quadratic(int a, int b, int c){
+        return ((-b) - Math.sqrt(b) - 4*a*c)/2*a;
+       // return ((-b) + Math.sqrt(b) - 4*a*c)/2*a;
+    }
+    //8. Java Program to Print Armstrong Number from 1 to 1000
+    public static void armstrong(){
+        int n, count = 0, a, b, c, sum = 0;
+        System.out.print("Armstrong numbers from 1 to 1000:");
+        for(int i = 1; i <= 1000; i++)
+        {
+            n = i;
+            while(n > 0)
+            {
+                b = n % 10;
+                sum = sum + (b * b * b);
+                n = n / 10;
+            }
+            if(sum == i)
+            {
+                System.out.print(i+" ");
+            }
+            sum = 0;
+        }
+
+    }
 
     public static void main(String args[]) { 
         System.out.println("jv1");
@@ -141,7 +167,13 @@ public class jv1 {
         j.MAth2(1);
 
         //6
-       System.out.println( j.ABC(7,7,7));
+        System.out.println( j.ABC(7,7,7));
+
+        //7
+        System.out.println(j.quadratic(2,4,21));
+
+        //8
+        j.armstrong();
 
 
 
