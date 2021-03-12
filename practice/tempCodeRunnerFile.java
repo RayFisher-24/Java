@@ -1,1 +1,1 @@
-a+b+c
+ operator(a,b,c)
