@@ -1,1 +1,1 @@
- operator(a,b,c)
+examAllowence
