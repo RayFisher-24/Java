@@ -1,30 +1,34 @@
+
 import java.util.Scanner;
 public class jv5{
     public static int abcd(){
-        int x = 5;
-        int y = 5;
-        int c = x+y;
-        System.out.println("Hey new Life");
-        return c;
+        Scanner sc = new Scanner(System.in);
+        System.out.print("Enter ");
+        int input = sc.nextInt();  
+
+        if(input==2){
+            System.out.println("fine");
+        }
+        else{
+            System.out.println("not fine");
+        }
+        return input;   
     }
-    public static int efgh(int x){
-        return x;
+    
+    static void ef(){
+        int q = 9;
+        if(q>5){
+            for(int i=1; i<10;++i){
+                System.out.println(i*3);
+            }
+        }
     }
-    public static float ijkl(){
-       /* int e = 6;
-        float r = 6.9f;
-        float z = e+r;*/
-        long p = 899998895656654L;
-        int q = 69;
-        int w = (int)(p+q);
-        return w;
+    static void qp(){
+        System.out.println("the batman");
     }
     public static void main(String[] args) {
-        
-        System.out.println(abcd());
-        System.out.println(efgh(5));
-        System.out.println(ijkl());
-
-
+        ef();
+        qp();
+       // abcd();
     }
 }
