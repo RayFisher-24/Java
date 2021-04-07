@@ -1,1 +1,1 @@
-arr[i]
+this.getSum()+" "+this.getAdd()
