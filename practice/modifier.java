@@ -1,4 +1,11 @@
 import java.util.Scanner;
+class runTime{
+    int a;
+    public runTime(int a){
+        this.a=a;
+        System.out.println(a);
+    }
+}
 
 class practiceJava{
 
@@ -22,13 +29,7 @@ class practiceJava{
         return this.getSum()+this.getAdd();
     }
 }
-class runTime{
-    int a;
-    public runTime(int a){
-        this.a=a;
-        System.out.println(a);
-    }
-}
+
 
 public class modifier{
 
