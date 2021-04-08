@@ -22,11 +22,20 @@ class practiceJava{
         return this.getSum()+this.getAdd();
     }
 }
+class runTime{
+    int a;
+    public runTime(int a){
+        this.a=a;
+        System.out.println(a);
+    }
+}
 
 public class modifier{
 
     public static void main(String[] args) {
        System.out.println("MODIFIER");
+
+       runTime rt = new runTime(8);
 
         practiceJava p = new practiceJava(5,9);
         //p.setSum(5);
