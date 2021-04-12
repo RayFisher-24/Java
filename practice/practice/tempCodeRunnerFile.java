@@ -1,0 +1,1 @@
+this.getSum()+" "+this.getAdd()

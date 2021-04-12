@@ -92,17 +92,7 @@ public class Array{
     public static void main(String[] args) {
        System.out.println("ARRAY");
 
-       int [][] DDD = new int[2][3];
-       //1st 
-       DDD[0][0]=101;
-       DDD[0][1]=102;
-       DDD[0][2]=103;
-       //2nd
-       DDD[1][0]=201;
-       DDD[1][1]=202;
-       DDD[1][2]=203;
-
-       arr3D(DDD);
+       
 
 
       /* //Problem-1
@@ -139,6 +129,17 @@ public class Array{
         avg(phyMark);
 
         //Problem-4
+        int [][] DDD = new int[2][3];
+       //1st 
+       DDD[0][0]=101;
+       DDD[0][1]=102;
+       DDD[0][2]=103;
+       //2nd
+       DDD[1][0]=201;
+       DDD[1][1]=202;
+       DDD[1][2]=203;
+
+       arr3D(DDD);
 
 
        int [] arr = new int[4];
