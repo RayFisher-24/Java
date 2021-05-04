@@ -50,6 +50,7 @@ public class Excep2{
         }
         catch(Exception e){
             System.out.println(e.getMessage());
+            System.exit(0);
         }
         finally{
             System.out.println("Finally is clean ");
@@ -73,7 +74,6 @@ public class Excep2{
             }
         }
         System.out.println("The Ten Opportunity is END");
-       */
-        for(int j=0; j<10; j++){ System.out.print(j-j);}
+        for(int j=0; j<10; j++){ System.out.print(j-j);}*/
     }
 }
