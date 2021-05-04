@@ -1,4 +1,4 @@
-import java.util.ArrayList;
+import java.util.*;
 //import java.lang.*;
 
 
@@ -6,7 +6,55 @@ import java.util.ArrayList;
 public class Ad_1_ArrayList{
     public static int questions(){
         //Write a Java program to create a new array list, add some colors (string) and print out the collection
+        ArrayList<String> al5 = new ArrayList<>();
+        al5.add("red");
+        al5.add("green");
+        al5.add("blue");
+        al5.forEach((n) -> System.out.println(n));
+
+        // Write a Java program to iterate through all elements in a array list.
+        ArrayList<String> al6 = new ArrayList<>(10);
+        al6.add("Arijit");
+        al6.add("ram");
+        al6.add("Sam");
+        al6.add("Bose");
+        al6.add("Rone");
+
+      /*  int i=0;
+        while(i<10){
+            System.out.println("The Number is "+ al6.get(i));
+            i++;
+        }*/
+
+        //Write a Java program to insert an element into the array list at the first position. 
+        al6.set(0,"Ronny");
+       // al6.forEach((m) -> System.out.println(m));
+
+        //Write a Java program to retrieve an element (at a specified index) from a given array list.
+        System.out.println("The index of "+al6.get(0));
+       // System.out.println("the String is "+ al6.indexOf("ram"));
         
+
+        //Write a Java program to update specific array element by given element
+        al6.set(1,"Eato");
+        
+
+        //Write a Java program to remove the third element from a array list
+        System.out.println("The 3rd Element is "+al6.remove(2));
+        System.out.println("and now 3rd element is remove ");
+        al6.forEach((m) -> System.out.println(m));
+
+        //Write a Java program to search an element in a array list
+        System.out.println("the element is in the arraylist? "+al6.contains("Eato"));
+
+        //Write a Java program to sort a given array list.
+        Object [] arr = al6.toArray();
+        System.out.println(Arrays.toString(arr));
+
+        //Write a Java program to copy one array list into another.
+        al6.clone();
+
+
         return 0;
     }
     public static void main(String args[]) {
