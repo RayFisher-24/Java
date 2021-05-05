@@ -20,11 +20,11 @@ public class Ad_1_ArrayList{
         al6.add("Bose");
         al6.add("Rone");
 
-      /*  int i=0;
+        int i=0;
         while(i<10){
             System.out.println("The Number is "+ al6.get(i));
             i++;
-        }*/
+        }
 
         //Write a Java program to insert an element into the array list at the first position. 
         al6.set(0,"Ronny");
@@ -52,9 +52,128 @@ public class Ad_1_ArrayList{
         System.out.println(Arrays.toString(arr));
 
         //Write a Java program to copy one array list into another.
-        al6.clone();
+        ArrayList<Integer> al7 = new ArrayList<>();
+        ArrayList<Integer> al8 = new ArrayList<>();
+        al7.add(0,5);
+        al7.add(1,9);
+        al7.add(2,7);
+        al7.add(3,8);
 
+        al8.add(0,34);
+        al8.add(1,39);
+        al8.add(2,37);
+        al8.add(3,38);
 
+        System.out.println("Before copy the Elements");
+        System.out.println("List1: "+al7);
+        System.out.println("List2: "+al8);
+
+        Collections.copy(al7, al8);
+
+        System.out.println("After copy the Elements");
+        System.out.println("List1: "+al7);
+        System.out.println("List2: "+al8);
+
+        //Write a Java program to shuffle elements in a array list.
+        System.out.println("Before Shuffle the ArrayList: "+al7);
+        Collections.shuffle(al7);
+        System.out.println("After Shuffle the ArrayList: "+al7);
+
+        //Write a Java program to reverse elements in a array list.
+        System.out.println("Before Reverce the element: "+al8);
+        Collections.reverse(al8);
+        System.out.println("After Reverce the element: "+al8);
+
+        //Write a Java program to extract a portion of a array list.
+        System.out.println("The original Elements: "+al8);
+        List<Integer> sub_al8 = al8.subList(0,2);
+        System.out.println("The Element After Extract: "+sub_al8);
+
+        //Write a Java program to compare two array lists.
+        System.out.println("ArrayList1:  "+al7);
+        System.out.println("ArrayList2: "+sub_al8);
+
+        //arrayList buildin operator 
+        System.out.println(al7.equals(al8));
+ 
+        //Normal if else for checking two ArrayList are same
+        if(al7==al8){
+            System.out.println("True");
+        }
+        else{
+            System.out.println("False");
+        }
+
+        //This formula count the Number of index inside two elements
+        al8.add(6);
+        al8.add(7);
+        al8.add(8);
+        al8.add(9);
+
+        if(al7.equals(al8)==true){
+            System.out.println("The Both ArrayList is Equals");
+        }
+        else{
+            System.out.println("The Both Elements are Not Equals");
+        }
+
+        //Write a Java program of swap two elements in an array list.
+        System.out.println("The List Elements are : "+al7);
+        Collections.swap(al7, 1, 2);
+        System.out.println("After Swap the 1st List: "+al7);
+
+        //Write a Java program to join two array lists.
+        System.out.println("The ArrayList Number1: "+al7);
+        System.out.println("The ArrayList Number2: "+al8);
+        System.out.println(al7.contains(al8));
+
+        //Let join two ArrayList
+
+        ArrayList<Integer> an = new ArrayList<>();
+        an.addAll(al7);
+        an.addAll(al8);
+        System.out.println(an);
+        
+        //Write a Java program to clone an array list to another array list
+        ArrayList<Integer> al9 = new ArrayList<>(10);
+        ArrayList<Integer> al10 = new ArrayList<>();
+        al9.add(321);
+        al9.add(124);
+        al9.add(236);
+        al9.add(456);
+
+        al10.add(1234);
+        al10.add(2401);
+        al10.add(1564);
+        al10.add(6523);
+
+        ArrayList<Integer> c = (ArrayList<Integer>)al9.clone();
+        System.out.println("The Original ArrayList: "+al9);
+        System.out.println("The Clone ArrayList: "+c);
+
+        //Write a Java program to empty an array list.
+        al10.removeAll(al10);
+        System.out.println("Remove all Elements form al10 ArrayList: "+al10);
+
+        //Write a Java program to test an array list is empty or not
+        System.out.println("The List is Empty? "+al9.isEmpty());
+
+       //Write a Java program to trim the capacity of an array list the current list size.
+       al9.trimToSize();
+       System.out.println("Trim the value "+al9);
+
+       //Write a Java program to increase the size of an array list.
+       al9.ensureCapacity(100);
+       System.out.println(al9);
+
+       //Write a Java program to replace the second element of a ArrayList with the specified element.
+        al9.set(0,121);
+        System.out.println(al9);
+
+       //Write a Java program to print all the elements of a ArrayList using the position of the elements
+        for(int i=0; i<al9.size(); i++){
+            System.out.println("The "+i+" Elements is "+al9.get(i));
+        }
         return 0;
     }
     public static void main(String args[]) {
@@ -64,11 +183,14 @@ public class Ad_1_ArrayList{
             int q = questions();
         }
         catch(IndexOutOfBoundsException e){
-            System.out.println("Their is an Exception"+e);
+            System.out.println("Their is an ArrayList Exception"+e);
             //System.exit(0);
         }
         catch(NullPointerException n){
             System.out.println(n);
+        }
+        catch(Exception f){
+            System.out.println("Thie is an Exception"+f);
         }
         finally{
             System.out.println("The code running is completed");
