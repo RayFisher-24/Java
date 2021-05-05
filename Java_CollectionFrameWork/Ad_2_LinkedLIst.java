@@ -54,7 +54,7 @@ public class Ad_2_LinkedLIst{
 
         //Write a Java program to insert the specified element at the end of a linked list.
         ll3.offer("Brown");
-        System.out.println("Adding Brown in the List: "+ll3);*/
+        System.out.println("Adding Brown in the List: "+ll3);
 
         //Write a Java program to insert some elements at the specified position into a linked list.
         LinkedList<String> ll4 = new LinkedList<>();
@@ -79,9 +79,103 @@ public class Ad_2_LinkedLIst{
 
         //Write a Java program to display the elements and their positions in a linked list.
         
-        Object o2 = ll4.toArray();
-        System.out.println(o2);
+        for(int i=0; i<ll4.size();i++){
+            System.out.println("The Element "+i+" is: "+ll4.get(i));
+        }
 
+        //Write a Java program to remove a specified element from a linked list.
+        ll4.offerFirst("Sam");
+        System.out.println("THE Original Elements: "+ll4);
+        ll4.remove(0);
+        System.out.println("The ELements are Now: "+ll4);
+
+        //Write a Java program to remove first and last element from a linked list.
+        ll4.offerFirst("Sam");
+        System.out.println("THE Original Elements: "+ll4);
+        ll4.removeFirst();
+        ll4.removeLast();
+        System.out.println("After Deletetion ELements are Now: "+ll4);
+
+        //Write a Java program to remove all the elements from a linked list
+        System.out.println("The ll5's Element are "+ll5);
+        ll5.clear();
+        System.out.println("The ll5's Element after deletetion are "+ll5);
+
+        //Write a Java program of swap two elements in a linked list
+        Collections.swap(ll4, 0,1);
+        System.out.println(ll4);
+
+        //Write a Java program to shuffle the elements in a linked list
+        Collections.shuffle(ll4);
+        System.out.println(ll4);
+
+        //Write a Java program to join two linked lists.
+        LinkedList<String> ll6 = new LinkedList<>();
+        ll6.add("List1");
+        ll6.add("List2");
+        ll6.add("List3");
+
+        LinkedList<String> ll7 = new LinkedList<>();
+        ll7.add("List4");
+        ll7.add("List5");
+        LinkedList<String> ll8 = new LinkedList<>();
+        ll8.add("List6");
+        ll8.add("List7");
+        ll8.add("List8");
+        ll7.addAll(ll8);
+        ll6.addAll(ll7);
+        Object [] arr = ll6.toArray();
+        System.out.println(Arrays.toString(arr));
+
+        //Write a Java program to clone an linked list to another linked list.
+        LinkedList<String> ls = new LinkedList<>();
+        ls = (LinkedList)ll6.clone();
+        System.out.println(ls);
+
+        //Write a Java program to remove and return the first element of a linked list.
+        ll7.removeFirstOccurrence("List4");
+        ll7.pop();
+        System.out.println(ll7);
+
+        //Write a Java program to retrieve but does not remove, the first element of a linked list.
+        ll8.peekFirst();
+        System.out.println(ll8);
+
+        //Write a Java program to retrieve but does not remove, the last element of a linked list.
+        ll8.peekLast();
+        System.out.println(ll8);
+*/
+        //Write a Java program to check if a particular element exists in a linked list.
+        LinkedList<Integer> ll9 = new LinkedList<>();
+        ll9.add(1);
+        ll9.add(2);
+        ll9.add(3);
+        ll9.add(4);
+
+         LinkedList<Integer> ll10 = new LinkedList<>();
+        ll10.add(1);
+        ll10.add(2);
+        ll10.add(3);
+        ll10.add(4);
+        for(int i=0; i<ll9.size();i++){
+            if(ll9.get(i)==2){ //we can use contains
+                System.out.println("The element of "+i+" is: "+true);
+            }
+            else{
+                System.out.println("The element of "+i+" is: "+false);
+            }
+            
+        }
+
+        //Write a Java program to convert a linked list to array list.
+
+        List<Integer> l = new ArrayList<>(ll9);
+        l.forEach((n) -> System.out.println(n));
+
+        //Write a Java program to replace an element in a linked list.
+        ll10.set(0,100);
+        System.out.println(ll10);
+        
         return 1;
     }
 
