@@ -3,7 +3,7 @@ import java.util.*;
 
 public class Ad_2_LinkedLIst{
     public static int link(){
-     /*   //Write a Java program to append the specified element to the end of a linked list.
+        //Write a Java program to append the specified element to the end of a linked list.
        LinkedList<Integer> ll2 = new LinkedList<>();
        ll2.add(0,2);
        ll2.add(3);
@@ -144,7 +144,7 @@ public class Ad_2_LinkedLIst{
         //Write a Java program to retrieve but does not remove, the last element of a linked list.
         ll8.peekLast();
         System.out.println(ll8);
-*/
+
         //Write a Java program to check if a particular element exists in a linked list.
         LinkedList<Integer> ll9 = new LinkedList<>();
         ll9.add(1);
